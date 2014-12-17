@@ -3,6 +3,9 @@
     <system systemId="http://localhost:8080/ProtoProvider/ProtoWebServiceService?WSDL" uri="src/jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl"/>
     <system systemId="http://localhost:8080/ProtoProvider/ProtoWebServiceService?xsd=1" uri="src/jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.xsd_1.xsd"/>
     <nextCatalog catalog="nbproject/private/cache/retriever/catalog.xml"/>
+    <system systemId="http://localhost:8080/Provider-1/P1WebService?WSDL" uri="src/jbiasa/localhost_8080/Provider-1/P1WebService.wsdl"/>
+    <system systemId="http://localhost:8080/Provider-1/P1WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P1WebService.xsd_1.xsd"/>
 </catalog>
+
 
 

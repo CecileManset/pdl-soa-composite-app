@@ -9,12 +9,12 @@
              xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
              xmlns:xsd="http://www.w3.org/2001/XMLSchema"
              targetNamespace="CompositeApp1"
-             xmlns:tns="CompositeApp1" xmlns:ns="http://proto/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
-    <import namespace="http://proto/" location="../jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl"/>
+             xmlns:tns="CompositeApp1" xmlns:ns="http://ws.provider.swim.insa.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <import namespace="http://ws.provider.swim.insa.com/" location="../jbiasa/localhost_8080/Provider-1/P1WebService.wsdl"/>
     <portType name="dummyCasaPortType"/>
-    <binding name="casaBinding1" type="ns:ProtoWebService">
+    <binding name="casaBinding1" type="ns:P1WebService">
         <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-        <operation name="ping">
+        <operation name="pingpong">
             <soap:operation/>
             <input>
                 <soap:body use="literal"/>

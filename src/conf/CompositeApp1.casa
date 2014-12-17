@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<casa xmlns="http://java.sun.com/xml/ns/casa" xmlns:ns1="CompositeApp1" xmlns:ns2="http://proto/" xmlns:xlink="http://www.w3.org/2000/xlink">
+<casa xmlns="http://java.sun.com/xml/ns/casa" xmlns:ns1="CompositeApp1" xmlns:ns2="http://ws.provider.swim.insa.com/" xmlns:xlink="http://www.w3.org/2000/xlink">
     <endpoints>
-        <endpoint endpoint-name="casaPort1" interface-name="ns2:ProtoWebService" name="endpoint1" service-name="ns1:CompositeApp1Service1"/>
-        <endpoint endpoint-name="ProtoWebServicePort" interface-name="ns2:ProtoWebService" name="endpoint2" service-name="ns2:ProtoWebServiceService"/>
+        <endpoint endpoint-name="casaPort1" interface-name="ns2:P1WebService" name="endpoint1" service-name="ns1:CompositeApp1Service1"/>
+        <endpoint endpoint-name="P1WebServicePort" interface-name="ns2:P1WebService" name="endpoint2" service-name="ns2:P1WebService"/>
     </endpoints>
     <service-units>
         <binding-component-service-unit artifacts-zip="sun-http-binding.jar" component-name="sun-http-binding" description="Represents this Service Unit" name="CompositeApp1-sun-http-binding" unit-name="sun-http-binding">
             <ports>
-                <port bindingType="soap" x="67" y="37">
-                    <link xlink:href="../jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl#xpointer(/definitions/service[@name='ProtoWebServiceService']/port[@name='ProtoWebServicePort'])" xlink:type="simple"/>
+                <port bindingType="soap" x="67" y="102">
+                    <link xlink:href="../jbiasa/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/service[@name='P1WebService']/port[@name='P1WebServicePort'])" xlink:type="simple"/>
                     <consumes endpoint="endpoint2"/>
                     <provides endpoint="endpoint2"/>
                 </port>
-                <port bindingType="soap" x="67" y="198">
+                <port bindingType="soap" x="67" y="236">
                     <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service1']/port[@name='casaPort1'])" xlink:type="simple"/>
                     <consumes endpoint="endpoint1"/>
                     <provides endpoint="endpoint1"/>
@@ -24,21 +24,21 @@
         <connection consumer="endpoint1" provider="endpoint2" state="new"/>
     </connections>
     <porttypes>
-        <link xlink:href="../jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl#xpointer(/definitions/portType[@name='ProtoWebService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiasa/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/portType[@name='P1WebService'])" xlink:type="simple"/>
         <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/portType[@name='dummyCasaPortType'])" xlink:type="simple"/>
-        <link xlink:href="../jbiServiceUnits/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl#xpointer(/definitions/portType[@name='ProtoWebService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/portType[@name='P1WebService'])" xlink:type="simple"/>
         <link xlink:href="../jbiServiceUnits/CompositeApp1.wsdl#xpointer(/definitions/portType[@name='dummyCasaPortType'])" xlink:type="simple"/>
     </porttypes>
     <bindings>
-        <link xlink:href="../jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl#xpointer(/definitions/binding[@name='ProtoWebServicePortBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiasa/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/binding[@name='P1WebServicePortBinding'])" xlink:type="simple"/>
         <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/binding[@name='casaBinding1'])" xlink:type="simple"/>
-        <link xlink:href="../jbiServiceUnits/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl#xpointer(/definitions/binding[@name='ProtoWebServicePortBinding'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/binding[@name='P1WebServicePortBinding'])" xlink:type="simple"/>
         <link xlink:href="../jbiServiceUnits/CompositeApp1.wsdl#xpointer(/definitions/binding[@name='casaBinding1'])" xlink:type="simple"/>
     </bindings>
     <services>
-        <link xlink:href="../jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl#xpointer(/definitions/service[@name='ProtoWebServiceService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiasa/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/service[@name='P1WebService'])" xlink:type="simple"/>
         <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service1'])" xlink:type="simple"/>
-        <link xlink:href="../jbiServiceUnits/localhost_8080/ProtoProvider/ProtoWebServiceService.wsdl#xpointer(/definitions/service[@name='ProtoWebServiceService'])" xlink:type="simple"/>
+        <link xlink:href="../jbiServiceUnits/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/service[@name='P1WebService'])" xlink:type="simple"/>
         <link xlink:href="../jbiServiceUnits/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service1'])" xlink:type="simple"/>
     </services>
     <regions>
