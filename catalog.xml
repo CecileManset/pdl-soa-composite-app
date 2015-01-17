@@ -4,16 +4,22 @@
     <system systemId="http://localhost:8080/ProtoProvider/ProtoWebServiceService?xsd=1" uri="src/jbiasa/localhost_8080/ProtoProvider/ProtoWebServiceService.xsd_1.xsd"/>
     <nextCatalog catalog="nbproject/private/cache/retriever/catalog.xml"/>
     <system systemId="http://localhost:8080/Provider-1/P1WebService?WSDL" uri="src/jbiasa/localhost_8080/Provider-1/P1WebService.wsdl"/>
-    <system systemId="http://localhost:8080/Provider-1/P1WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P1WebService.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/Provider-1/P2WebService?wsdl" uri="src/jbiasa/localhost_8080/Provider-1/P2WebService.wsdl"/>
     <system systemId="http://localhost:8080/Provider-1/P2WebService?WSDL" uri="src/jbiasa/localhost_8080/Provider-1/P2WebService.wsdl"/>
-    <system systemId="http://localhost:8080/Provider-1/P2WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P2WebService.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/Provider-1/P3WebService?Tester" uri="src/jbiasa/localhost_8080/Provider-1/P3WebService.tester"/>
     <system systemId="http://localhost:8080/Provider-1/P3WebService?WSDL" uri="src/jbiasa/localhost_8080/Provider-1/P3WebService.wsdl"/>
-    <system systemId="http://localhost:8080/Provider-1/P3WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P3WebService.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/Provider-1/P4WebService?WSDL" uri="src/jbiasa/localhost_8080/Provider-1/P4WebService.wsdl"/>
+    <system systemId="http://localhost:8080/Provider-1/P2WebService?wsdl" uri="src/jbiasa/localhost_8080/Provider-1/P2WebService.wsdl"/>
+    <system systemId="http://localhost:8080/Provider-1/P2WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P2WebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Provider-1/P3WebService?wsdl" uri="src/jbiasa/localhost_8080/Provider-1/P3WebService.wsdl"/>
+    <system systemId="http://localhost:8080/Provider-1/P3WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P3WebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Provider-1/P4WebService?wsdl" uri="src/jbiasa/localhost_8080/Provider-1/P4WebService.wsdl"/>
     <system systemId="http://localhost:8080/Provider-1/P4WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P4WebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Provider-1/P1WebService?wsdl" uri="src/jbiasa/localhost_8080/Provider-1/P1WebService.wsdl"/>
+    <system systemId="http://localhost:8080/Provider-1/P1WebService?xsd=1" uri="src/jbiasa/localhost_8080/Provider-1/P1WebService.xsd_1.xsd"/>
 </catalog>
+
+
+
 
 
 

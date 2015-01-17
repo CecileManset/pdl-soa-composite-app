@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="CompositeApp1" xmlns:ns2="http://ws.provider.swim.insa.com/" xmlns:ns3="http://p2.ws.provider.swim.insa.com/" xmlns:ns4="http://p3.ws.provider.swim.insa.com/" xmlns:ns5="http://p4.ws.provider.swim.insa.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/jbi ./jbi.xsd">
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="CompositeApp1" xmlns:ns2="http://p2.ws.provider.swim.insa.com/" xmlns:ns3="http://p3.ws.provider.swim.insa.com/" xmlns:ns4="http://p4.ws.provider.swim.insa.com/" xmlns:ns5="http://ws.provider.swim.insa.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/jbi ./jbi.xsd">
     <service-assembly>
         <identification>
             <name>CompositeApp1</name>
@@ -17,20 +17,20 @@
         </service-unit>
         <connections>
             <connection>
-                <consumer endpoint-name="casaPort1" service-name="ns1:CompositeApp1Service1"/>
-                <provider endpoint-name="P1WebServicePort" service-name="ns2:P1WebService"/>
-            </connection>
-            <connection>
                 <consumer endpoint-name="casaPort2" service-name="ns1:CompositeApp1Service2"/>
-                <provider endpoint-name="P2WebServicePort" service-name="ns3:P2WebService"/>
+                <provider endpoint-name="P2WebServicePort" service-name="ns2:P2WebService"/>
             </connection>
             <connection>
                 <consumer endpoint-name="casaPort3" service-name="ns1:CompositeApp1Service3"/>
-                <provider endpoint-name="P3WebServicePort" service-name="ns4:P3WebService"/>
+                <provider endpoint-name="P3WebServicePort" service-name="ns3:P3WebService"/>
             </connection>
             <connection>
                 <consumer endpoint-name="casaPort4" service-name="ns1:CompositeApp1Service4"/>
-                <provider endpoint-name="P4WebServicePort" service-name="ns5:P4WebService"/>
+                <provider endpoint-name="P4WebServicePort" service-name="ns4:P4WebService"/>
+            </connection>
+            <connection>
+                <consumer endpoint-name="casaPort1" service-name="ns1:CompositeApp1Service1"/>
+                <provider endpoint-name="P1WebServicePort" service-name="ns5:P1WebService"/>
             </connection>
         </connections>
     </service-assembly>
