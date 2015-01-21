@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="CompositeApp1" xmlns:ns2="http://p2.ws.provider.swim.insa.com/" xmlns:ns3="http://p3.ws.provider.swim.insa.com/" xmlns:ns4="http://p4.ws.provider.swim.insa.com/" xmlns:ns5="http://ws.provider.swim.insa.com/" version="1.0">
+<jbi xmlns="http://java.sun.com/xml/ns/jbi" xmlns:ns1="CompositeApp1" xmlns:ns2="http://p1.ws.provider.swim.insa.com/" xmlns:ns3="http://p2.ws.provider.swim.insa.com/" xmlns:ns4="http://p3.ws.provider.swim.insa.com/" xmlns:ns5="http://p4.ws.provider.swim.insa.com/" version="1.0">
     <services binding-component="true">
-        <provides endpoint-name="P2WebServicePort" interface-name="ns2:P2WebService" service-name="ns2:P2WebService"/>
-        <provides endpoint-name="P3WebServicePort" interface-name="ns3:P3WebService" service-name="ns3:P3WebService"/>
-        <provides endpoint-name="P4WebServicePort" interface-name="ns4:P4WebService" service-name="ns4:P4WebService"/>
-        <provides endpoint-name="P1WebServicePort" interface-name="ns5:P1WebService" service-name="ns5:P1WebService"/>
-        <consumes endpoint-name="casaPort2" interface-name="ns2:P2WebService" service-name="ns1:CompositeApp1Service2"/>
-        <consumes endpoint-name="casaPort3" interface-name="ns3:P3WebService" service-name="ns1:CompositeApp1Service3"/>
-        <consumes endpoint-name="casaPort4" interface-name="ns4:P4WebService" service-name="ns1:CompositeApp1Service4"/>
-        <consumes endpoint-name="casaPort1" interface-name="ns5:P1WebService" service-name="ns1:CompositeApp1Service1"/>
+        <provides endpoint-name="P1WebServicePort" interface-name="ns2:P1WebService" service-name="ns2:P1WebService"/>
+        <provides endpoint-name="P2WebServicePort" interface-name="ns3:P2WebService" service-name="ns3:P2WebService"/>
+        <provides endpoint-name="P3WebServicePort" interface-name="ns4:P3WebService" service-name="ns4:P3WebService"/>
+        <provides endpoint-name="P4WebServicePort" interface-name="ns5:P4WebService" service-name="ns5:P4WebService"/>
+        <consumes endpoint-name="casaPort1" interface-name="ns2:P1WebService" service-name="ns1:CompositeApp1Service1"/>
+        <consumes endpoint-name="casaPort2" interface-name="ns3:P2WebService" service-name="ns1:CompositeApp1Service2"/>
+        <consumes endpoint-name="casaPort3" interface-name="ns4:P3WebService" service-name="ns1:CompositeApp1Service3"/>
+        <consumes endpoint-name="casaPort4" interface-name="ns5:P4WebService" service-name="ns1:CompositeApp1Service4"/>
     </services>
 </jbi>

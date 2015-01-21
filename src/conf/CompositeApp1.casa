@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<casa xmlns="http://java.sun.com/xml/ns/casa" xmlns:ns1="CompositeApp1" xmlns:ns2="http://ws.provider.swim.insa.com/" xmlns:ns3="http://p2.ws.provider.swim.insa.com/" xmlns:ns4="http://p3.ws.provider.swim.insa.com/" xmlns:ns5="http://p4.ws.provider.swim.insa.com/" xmlns:xlink="http://www.w3.org/2000/xlink" xmlns:ns="http://p1.ws.provider.swim.insa.com/">
+<casa xmlns="http://java.sun.com/xml/ns/casa" xmlns:ns1="CompositeApp1" xmlns:ns2="http://p1.ws.provider.swim.insa.com/" xmlns:ns3="http://p2.ws.provider.swim.insa.com/" xmlns:ns4="http://p3.ws.provider.swim.insa.com/" xmlns:ns5="http://p4.ws.provider.swim.insa.com/" xmlns:xlink="http://www.w3.org/2000/xlink">
     <endpoints>
         <endpoint endpoint-name="casaPort1" interface-name="ns2:P1WebService" name="endpoint1" service-name="ns1:CompositeApp1Service1"/>
-        <endpoint endpoint-name="casaPort2" interface-name="ns3:P2WebService" name="endpoint2" service-name="ns1:CompositeApp1Service2"/>
-        <endpoint endpoint-name="casaPort3" interface-name="ns4:P3WebService" name="endpoint3" service-name="ns1:CompositeApp1Service3"/>
-        <endpoint endpoint-name="casaPort4" interface-name="ns5:P4WebService" name="endpoint4" service-name="ns1:CompositeApp1Service4"/>
-        <endpoint endpoint-name="P2WebServicePort" interface-name="ns3:P2WebService" name="endpoint5" service-name="ns3:P2WebService"/>
+        <endpoint endpoint-name="P1WebServicePort" interface-name="ns2:P1WebService" name="endpoint2" service-name="ns2:P1WebService"/>
+        <endpoint endpoint-name="casaPort2" interface-name="ns3:P2WebService" name="endpoint3" service-name="ns1:CompositeApp1Service2"/>
+        <endpoint endpoint-name="P2WebServicePort" interface-name="ns3:P2WebService" name="endpoint4" service-name="ns3:P2WebService"/>
+        <endpoint endpoint-name="casaPort3" interface-name="ns4:P3WebService" name="endpoint5" service-name="ns1:CompositeApp1Service3"/>
         <endpoint endpoint-name="P3WebServicePort" interface-name="ns4:P3WebService" name="endpoint6" service-name="ns4:P3WebService"/>
-        <endpoint endpoint-name="P4WebServicePort" interface-name="ns5:P4WebService" name="endpoint7" service-name="ns5:P4WebService"/>
-        <endpoint name="endpoint8" endpoint-name="P1WebServicePort" interface-name="" service-name="ns:P1WebService"/>
+        <endpoint endpoint-name="casaPort4" interface-name="ns5:P4WebService" name="endpoint7" service-name="ns1:CompositeApp1Service4"/>
+        <endpoint endpoint-name="P4WebServicePort" interface-name="ns5:P4WebService" name="endpoint8" service-name="ns5:P4WebService"/>
     </endpoints>
     <service-units>
         <binding-component-service-unit artifacts-zip="sun-http-binding.jar" component-name="sun-http-binding" description="Represents this Service Unit" name="CompositeApp1-sun-http-binding" unit-name="sun-http-binding">
             <ports>
-                <port bindingType="soap" x="67" y="508">
+                <port bindingType="soap" x="67" y="475">
                     <link xlink:href="../jbiasa/localhost_8080/Provider-1/P3WebService.wsdl#xpointer(/definitions/service[@name='P3WebService']/port[@name='P3WebServicePort'])" xlink:type="simple"/>
                     <consumes endpoint="endpoint6"/>
                     <provides endpoint="endpoint6"/>
                 </port>
-                <port bindingType="soap" x="67" y="262">
+                <port bindingType="soap" x="67" y="297">
                     <link xlink:href="../jbiasa/localhost_8080/Provider-1/P2WebService.wsdl#xpointer(/definitions/service[@name='P2WebService']/port[@name='P2WebServicePort'])" xlink:type="simple"/>
-                    <consumes endpoint="endpoint5"/>
-                    <provides endpoint="endpoint5"/>
+                    <consumes endpoint="endpoint4"/>
+                    <provides endpoint="endpoint4"/>
                 </port>
-                <port bindingType="soap" x="67" y="732">
+                <port bindingType="soap" x="67" y="115">
+                    <link xlink:href="../jbiasa/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/service[@name='P1WebService']/port[@name='P1WebServicePort'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint2"/>
+                    <provides endpoint="endpoint2"/>
+                </port>
+                <port bindingType="soap" x="67" y="672">
                     <link xlink:href="../jbiasa/localhost_8080/Provider-1/P4WebService.wsdl#xpointer(/definitions/service[@name='P4WebService']/port[@name='P4WebServicePort'])" xlink:type="simple"/>
-                    <consumes endpoint="endpoint7"/>
-                    <provides endpoint="endpoint7"/>
+                    <consumes endpoint="endpoint8"/>
+                    <provides endpoint="endpoint8"/>
                 </port>
-                <port bindingType="soap" x="67" y="132">
+                <port bindingType="soap" x="67" y="193">
                     <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service1']/port[@name='casaPort1'])" xlink:type="simple"/>
                     <consumes endpoint="endpoint1"/>
                     <provides endpoint="endpoint1"/>
                 </port>
-                <port bindingType="soap" x="67" y="343">
+                <port bindingType="soap" x="67" y="379">
                     <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service2']/port[@name='casaPort2'])" xlink:type="simple"/>
-                    <consumes endpoint="endpoint2"/>
-                    <provides endpoint="endpoint2"/>
-                </port>
-                <port bindingType="soap" x="67" y="586">
-                    <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service3']/port[@name='casaPort3'])" xlink:type="simple"/>
                     <consumes endpoint="endpoint3"/>
                     <provides endpoint="endpoint3"/>
                 </port>
-                <port bindingType="soap" x="67" y="811">
-                    <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service4']/port[@name='casaPort4'])" xlink:type="simple"/>
-                    <consumes endpoint="endpoint4"/>
-                    <provides endpoint="endpoint4"/>
+                <port bindingType="soap" x="67" y="553">
+                    <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service3']/port[@name='casaPort3'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint5"/>
+                    <provides endpoint="endpoint5"/>
                 </port>
-                <port x="67" y="0" bindingType="soap">
-                    <link xlink:href="../jbiasa/localhost_8080/Provider-1/P1WebService.wsdl#xpointer(/definitions/service[@name=&apos;P1WebService&apos;]/port[@name=&apos;P1WebServicePort&apos;])" xlink:type="simple"/>
-                    <consumes endpoint="endpoint8"/>
-                    <provides endpoint="endpoint8"/>
+                <port bindingType="soap" x="67" y="754">
+                    <link xlink:href="../jbiasa/CompositeApp1.wsdl#xpointer(/definitions/service[@name='CompositeApp1Service4']/port[@name='casaPort4'])" xlink:type="simple"/>
+                    <consumes endpoint="endpoint7"/>
+                    <provides endpoint="endpoint7"/>
                 </port>
             </ports>
         </binding-component-service-unit>
     </service-units>
     <connections>
-        <connection consumer="endpoint2" provider="endpoint5" state="new"/>
-        <connection consumer="endpoint3" provider="endpoint6" state="new"/>
-        <connection consumer="endpoint4" provider="endpoint7" state="new"/>
-        <connection state="new" consumer="endpoint1" provider="endpoint8"/>
+        <connection consumer="endpoint1" provider="endpoint2" state="new"/>
+        <connection consumer="endpoint3" provider="endpoint4" state="new"/>
+        <connection consumer="endpoint5" provider="endpoint6" state="new"/>
+        <connection consumer="endpoint7" provider="endpoint8" state="new"/>
     </connections>
     <porttypes>
         <link xlink:href="../jbiasa/localhost_8080/Provider-1/P3WebService.wsdl#xpointer(/definitions/portType[@name='P3WebService'])" xlink:type="simple"/>
@@ -116,4 +116,3 @@
         <region name="External Modules" width="200"/>
     </regions>
 </casa>
-
