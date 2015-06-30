@@ -10,4 +10,4 @@ This project provides an ESB testing tool, simulating consumers and providers us
 This project was also an opportunity to work in a team of 6 students, each one having a particular role in the team like project manager, requirements, design, tests, quality, technical coordinators. Everyone participated to the project development.
 
 
-This is the compisite application part of the project, responsible for modelling the protocol bridging inside the bus.
+This is the composite application part of the project, responsible for modelling the protocol bridging inside the bus.
